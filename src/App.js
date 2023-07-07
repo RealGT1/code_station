@@ -26,7 +26,9 @@ function App() {
         <Wrapper>
           <Line>
             <Text>
-              <span>Your Text Here.</span>
+              <span>Code.</span>
+              <span>Coffee.</span>
+              <span>Repeat.</span>
             </Text>
           </Line>
         </Wrapper>
@@ -81,7 +83,7 @@ const Text = styled.div`
 
   span {
     font-family: "Major Mono Display", monospace;
-    color: rgb(150, 149, 149);
+    color: rgb(255,255,255)
     font-size: 10vw;
   }
 `;
