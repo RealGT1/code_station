@@ -17,11 +17,21 @@ function App() {
       },
     });
 
-    return () => {};
+    return () => { };
   });
 
   return (
     <div className="App">
+      <AppContainer>
+        <Wrapper>
+          <Line>
+            <Text>
+              <span>Your Text Here</span>
+            </Text>
+          </Line>
+        </Wrapper>
+      </AppContainer>
+      );
 
     </div>
   );
