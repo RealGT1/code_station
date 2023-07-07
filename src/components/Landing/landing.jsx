@@ -6,7 +6,7 @@ const Landing = () => {
     <div className='o'>
       <p className='a'>Code</p>
       <p className='a'>Coffee</p>
-      <p className='a'>Connect</p>
+      <p className='a'>Connect.</p>
     </div>
   );
 }
