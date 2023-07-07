@@ -26,7 +26,7 @@ function App() {
         <Wrapper>
           <Line>
             <Text>
-              <span>Your Text Here</span>
+              <span>Your Text Here.</span>
             </Text>
           </Line>
         </Wrapper>
