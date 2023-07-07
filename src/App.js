@@ -21,31 +21,9 @@ function App() {
   });
 
   return (
-    <AppContainer>
-      <Wrapper>
-        <Line className="singleLine">
-          <Text>
-            <span>“</span>C<span>o</span>DE<span>R</span>,
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            DESI<span>G</span>N <span>A</span>DDICT,
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            <span>A</span>BST<span>RA</span>CT
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            {" "}
-            T<span>H</span>INKE<span>R.”</span>
-          </Text>
-        </Line>
-      </Wrapper>
-    </AppContainer>
+    <div className="App">
+
+    </div>
   );
 }
 
