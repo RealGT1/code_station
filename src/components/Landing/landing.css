@@ -19,7 +19,7 @@ body {
     font-size: 10em;
     font-weight: 400;
 
-    opacity: 0; /* Start with 0 opacity */
+    opacity: 0; /* Start with 0 opacity ??? */
     animation: fadeIn 1s ease-in 1s forwards;
 
 }
