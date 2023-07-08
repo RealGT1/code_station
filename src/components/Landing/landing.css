@@ -21,7 +21,7 @@ body {
 }
 
 .a {
-    color: #dc2f02;
+    color: #fff808;
 }
 
 .a p {
@@ -31,11 +31,11 @@ body {
 }
 
 .b {
-    color: #f48c06;
+    color: #fffb7e;
 }
 
 .c {
-    color: #ffba08;
+    color: #fffecc;
 }
 
 .myButton {
@@ -45,22 +45,24 @@ body {
     position: fixed;
     left: 44%;
     top: 85%;
-    box-shadow: 0px 0px 0px 0px #3dc21b;
+    
     background-color: transparent;
     border-radius: 28px;
-    border: 1px solid #ffffff;
+    border: 3px solid #fffecc ;
     cursor: pointer;
-    color: #ffffff;
+    color: #fffecc;
     font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 19px;
+    font-weight: 500;
     padding: 16px 31px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
+    box-shadow: 1px 1px 6px 1px #fffecc ;
 }
 
 .myButton:hover {
-    background-color: #f1ffb9;
+    background-color:#fffecc ;
     color: #161616;
+    box-shadow: 1px 1px 6px 1px rgb(168,160,150);
 }
 
 
