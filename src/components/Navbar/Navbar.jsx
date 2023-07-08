@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css";
 import BedtimeTwoToneIcon from "@mui/icons-material/BedtimeTwoTone";
 import { Tooltip } from "@mui/material";
-<FontAwesomeIcon icon="fa-duotone fa-browsers" style={{"--fa-primary-color": "#ffd43b", "--fa-secondary-color": "#e0da2e",}} />
+
 const Navbar = () => {
   
   return (
