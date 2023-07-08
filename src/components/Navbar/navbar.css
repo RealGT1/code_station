@@ -1,0 +1,25 @@
+.title {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 12px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #fffb7e;
+  padding: 20px;
+  background-color: wheat;
+  margin-left: 2em;
+}
+.t2 {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 12px;
+  font-size: 1em;
+  font-weight: 500;
+  color: whitesmoke;
+  padding: 3px;
+  margin-left: 0em;
+}

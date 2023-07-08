@@ -2,11 +2,12 @@
 
 body {
     background-color: #161616;
+    overflow-y: scroll;
 }
 
 .text-main {
     margin-top: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .text {
@@ -18,8 +19,18 @@ body {
     font-size: 10em;
     font-weight: 400;
 
-}
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1s ease-in 1s forwards;
 
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+    }
+  }
 .a {
     color: #fff808;
 }
@@ -42,9 +53,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     left: 44%;
-    top: 85%;
+    top: 88%;
     
     background-color: transparent;
     border-radius: 28px;
@@ -57,12 +68,22 @@ body {
     padding: 16px 31px;
     text-decoration: none;
     box-shadow: 1px 1px 6px 1px #fffecc ;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeInbtn 2s ease-in 2s forwards;
 }
-
+@keyframes fadeInbtn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+    }
+  }
 .myButton:hover {
     background-color:#fffecc ;
     color: #161616;
     box-shadow: 1px 1px 6px 1px rgb(168,160,150);
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 
