@@ -4,9 +4,10 @@ import './landing.css';
 const Landing = () => {
   return (
     <div className='o'>
-      <p className='a'>Code</p>
-      <p className='a'>Coffee</p>
-      <p className='a'>Connect.</p>
+      <p className='a'>Code.</p>
+      <p className='b'>Coffee.</p>
+      <p className='c'>Connect.</p>
+      <button className='myButton'>Get Started</button>
     </div>
   );
 }
