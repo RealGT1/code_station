@@ -4,12 +4,12 @@
   justify-content: left;
   align-items: center;
   height: 12px;
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-weight: 500;
   color: #fffb7e;
   padding: 20px;
   
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .t2 {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
@@ -39,7 +39,7 @@
     font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 500;
-    padding: 12px 25px;
+    padding: 10px 20px;
     text-decoration: none;
     box-shadow: 1px 1px 6px 1px #fffecc ;
     opacity: 0; /* Start with 0 opacity */
@@ -51,13 +51,13 @@
     box-shadow: 1px 1px 6px 1px rgb(168,160,150);
     transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
-.nightmode{
+.icons{
     display: flex;
-    justify-content: flex-end;
+    justify-items: flex-end;
     align-items: center;
     position: relative;
-    left: 78%;
+    left: 77%;
     top: 60%;
-    font-size: 2em;
+    font-size: 5em;
     cursor: pointer;
 }
