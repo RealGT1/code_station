@@ -1,0 +1,44 @@
+.main {
+    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 100vh;
+    color: rgb(255, 254, 254);
+}
+
+.body {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* Update this line to align the items at the top */
+    margin-bottom: 0;
+    /* Add this line to remove the bottom margin */
+}
+
+.body p {
+    font-size: 3.5vw;
+    margin: 0;
+    margin-right: 1.5vw;
+}
+
+.body span {
+    opacity: 0.42;
+}
+
+  
+  .body p.highlight {
+    color: rgb(255, 255, 0);
+  }
+  
+  .highlight {
+    color: yellow;
+  }
+  
+  .highlight1 {
+    color: yellow;
+  }
+  
+  
