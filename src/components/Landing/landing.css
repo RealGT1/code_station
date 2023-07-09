@@ -1,75 +1,75 @@
 @import url("https://v1.fontapi.ir/css/SFProDisplay");
 
 body {
-    background-color: #161616;
-    overflow-y: scroll;
+  background-color: #161616;
+  overflow-y: scroll;
 }
 
 .text-main {
-    margin-top: 1px;
-    margin-bottom: 15px;
+  margin-top: 1px;
+  margin-bottom: 15px;
 }
 
 .text {
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15px;
-    font-size: 10em;
-    font-weight: 400;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  font-size: 10em;
+  font-weight: 400;
 
-    opacity: 0; /* Start with 0 opacity ??? */
-    animation: fadeIn 1s ease-in 1s forwards;
-
+  opacity: 0; /* Start with 0 opacity ??? */
+  animation: fadeIn 1s ease-in 1s forwards;
 }
 @keyframes fadeIn {
-    from {
-      opacity: 0; /* Start with 0 opacity */
-    }
-    to {
-      opacity: 1; /* End with full opacity 9999  updated code after u slept */
-    }
+  from {
+    opacity: 0; /* Start with 0 opacity */
   }
+  to {
+    opacity: 1; /* End with full opacity 9999  updated code after u slept */
+  }
+}
 .a {
-    color: #fff808;
+  color: #fff808;
 }
 
 .a p {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .b {
-    color: #fffb7e;
+  color: #fffb7e;
 }
 
 .c {
-    color: #fffecc;
+  color: #fffecc;
 }
 
 .myButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 44%;
-    top: 88%;
-    
-    background-color: transparent;
-    border-radius: 28px;
-    border: 3px solid #fffecc ;
-    cursor: pointer;
-    color: #fffecc;
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-    padding: 16px 31px;
-    text-decoration: none;
-    box-shadow: 1px 1px 6px 1px #fffecc ;
-    opacity: 0; /* Start with 0 opacity */
-    animation: fadeInbtn 2s ease-in 2s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 44%;
+  top: 88%;
+
+  background-color: transparent;
+  border-radius: 28px;
+  border: 3px solid #fffecc;
+  cursor: pointer;
+  color: #fffecc;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 16px 31px;
+  text-decoration: none;
+  box-shadow: 1px 1px 6px 1px #fffecc;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeInbtn 1.5s ease 1.5s forwards;
+  animation: buttonFadeIn 3s ease-in 3s forwards
 }
 
 
@@ -83,20 +83,94 @@ body {
 
 
 @keyframes fadeInbtn {
-    from {
-      opacity: 0; /* Start with 0 opacity */
-    }
-    to {
-      opacity: 1; /* End with full opacity */
-    }
+  from {
+    opacity: 0; /* Start with 0 opacity */
   }
+  to {
+    opacity: 1; /* End with full opacity */
+  }
+}
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0em);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: translateY(-0.8em);
+  }
+}
 .myButton:hover {
-    background-color:#fffecc ;
-    color: #161616;
-    box-shadow: 1px 1px 6px 1px rgb(168,160,150);
-    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fffecc;
+  color: #161616;
+  box-shadow: 1px 1px 6px 1px rgb(168, 160, 150);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.codeeditorimg {
+  height: 12em;
+  width: 15em;
+  
+  border-radius: 25px;
+  opacity: 0.4;
+  position: relative;
+  left: 10%;
+  bottom:40em;
+   /* Start with 0 opacity ??? */
+  
+  animation: movingAnimation 12s ease-in infinite;
+  animation: fadeInAnimation 6s ease-in  forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes movingAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 
-
-
+.collab{
+  height: 12em;
+  width: 15em;
+  
+  border-radius: 25px;
+  opacity: 0.4;
+  position: relative;
+  left: 58%;
+  bottom:28em;
+  animation: movingAnimation 12s ease-in infinite;
+  animation: fadeInAnimation2 6s ease-in forwards;
+}
+@keyframes fadeInAnimation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+@keyframes movingAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
