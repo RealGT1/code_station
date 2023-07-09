@@ -30,7 +30,7 @@ const Landing = () => {
 
   useEffect(() => {
     scroll.scrollToBottom({
-      duration: 6000,
+      duration: 7000,
       delay: 0,
       smooth: 'easeInOutQuart',
     });
