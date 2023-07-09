@@ -71,6 +71,17 @@ body {
   animation: fadeInbtn 1.5s ease 1.5s forwards;
   animation: buttonFadeIn 3s ease-in 3s forwards
 }
+
+
+.link-button {
+  text-decoration: none;
+}
+
+.link-button:hover {
+  text-decoration: none;
+}
+
+
 @keyframes fadeInbtn {
   from {
     opacity: 0; /* Start with 0 opacity */
