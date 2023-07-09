@@ -7,7 +7,7 @@ import { animateScroll as scroll } from 'react-scroll';
 const Landing = () => {
   useEffect(() => {
     scroll.scrollToBottom({
-      duration: 5000,
+      duration: 6000,
       delay: 0,
       smooth: 'easeInOutQuart',
     });

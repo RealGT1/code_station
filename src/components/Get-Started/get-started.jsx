@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLocation } from 'react-router-dom';
 import './get-started.css';
 
 const phrase =
@@ -9,8 +10,10 @@ const phrase =
 const Getstarted = () => {
   const refs = useRef([]);
   const containerRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
     gsap.registerPlugin(ScrollTrigger);
     restoreAnimationState();
     createAnimation();
@@ -19,7 +22,7 @@ const Getstarted = () => {
     return () => {
       window.removeEventListener('beforeunload', saveAnimationState);
     };
-  }, []);
+  }, [location.pathname]);
 
   const saveAnimationState = () => {
     const animationState = gsap.getProperty(refs.current, 'opacity');
