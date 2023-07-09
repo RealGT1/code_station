@@ -2,43 +2,43 @@
     font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
     display: flex;
     height: 100vh;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
+    margin-top: 20vh; /* Adjust the value as desired for the distance from the top */
     margin-bottom: 100vh;
-    color: rgb(255, 254, 254);
+    color: rgb(255, 255, 255);
 }
+
 
 .body {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* Update this line to align the items at the top */
+    margin-top: 10px; /* Adjust the value as desired for the distance from the top */
     margin-bottom: 0;
-    /* Add this line to remove the bottom margin */
+    margin-top: 95px;
 }
 
 .body p {
     font-size: 3.5vw;
-    margin: 0;
+    margin: 10px 0 0 0; /* Adjust the margin as desired */
     margin-right: 1.5vw;
-}
+  }
+  
 
 .body span {
     opacity: 0.42;
 }
 
-  
-  .body p.highlight {
+.body p.highlight {
     color: rgb(255, 255, 0);
-  }
-  
-  .highlight {
+}
+
+.highlight {
     color: yellow;
-  }
-  
-  .highlight1 {
+}
+
+.highlight1 {
     color: yellow;
-  }
-  
-  
+}

@@ -12,16 +12,34 @@ const Getstarted = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    restoreAnimationState();
     createAnimation();
-    autoScroll();
+    window.addEventListener('beforeunload', saveAnimationState);
+
+    return () => {
+      window.removeEventListener('beforeunload', saveAnimationState);
+    };
   }, []);
+
+  const saveAnimationState = () => {
+    const animationState = gsap.getProperty(refs.current, 'opacity');
+    localStorage.setItem('animationState', JSON.stringify(animationState));
+  };
+
+  const restoreAnimationState = () => {
+    const savedAnimationState = localStorage.getItem('animationState');
+    if (savedAnimationState) {
+      const parsedState = JSON.parse(savedAnimationState);
+      gsap.set(refs.current, { opacity: parsedState });
+    }
+  };
 
   const createAnimation = () => {
     gsap.to(refs.current, {
       scrollTrigger: {
         trigger: containerRef.current,
         scrub: true,
-        start: 'top',
+        start: 'top 20%',
         end: `+=${window.innerHeight / 1.5}`,
       },
       opacity: 1,
@@ -30,39 +48,6 @@ const Getstarted = () => {
     });
   };
 
-  const autoScroll = () => {
-    const scrollDuration = 12000; // Adjust the duration as desired
-  
-    const scrollStep = (distance, stepSize) => {
-      const scrollStepSize = distance / (scrollDuration / stepSize);
-      let scrollPosition = 0;
-  
-      const scrollInterval = setInterval(() => {
-        if (scrollPosition >= distance) {
-          clearInterval(scrollInterval);
-        }
-        window.scrollBy(0, scrollStepSize);
-        scrollPosition += scrollStepSize;
-      }, stepSize);
-    };
-  
-    const scrollToBottom = () => {
-      const documentHeight = Math.max(
-        document.body.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight
-      );
-      const windowHeight = window.innerHeight;
-      const distanceToScroll = documentHeight - windowHeight;
-      scrollStep(distanceToScroll, 15); // Adjust the stepSize (scroll speed) as desired
-    };
-  
-    scrollToBottom();
-  };
-  
-
   const splitSentences = (phrase) => {
     const sentences = phrase.split('. ');
 
@@ -70,12 +55,13 @@ const Getstarted = () => {
       const words = sentence.split(' ');
 
       const sentenceElement = words.map((word, j) => {
-        const letters = splitLetters(word);
+        const isHighlighted = word === 'CodeStation!'; // Specify the highlighted word(s)
+        const letters = splitLetters(word, isHighlighted);
         const lastWord = j === words.length - 1;
 
         // Apply different styles to specific words
         let wordClassName = '';
-        if (word === 'CodeStation!') {
+        if (isHighlighted) {
           wordClassName = 'highlight';
         }
 
@@ -88,7 +74,9 @@ const Getstarted = () => {
       });
 
       const sentenceClassName =
-        sentence === 'CodeStation: Empowering students, simplifying coding.' ? 'highlight1' : '';
+        sentence === 'CodeStation: Empowering students, simplifying coding.'
+          ? 'highlight1'
+          : '';
 
       // Remove the dot if it's the last sentence
       const hasDot = i !== sentences.length - 1;
@@ -107,11 +95,16 @@ const Getstarted = () => {
     return body;
   };
 
-  const splitLetters = (word) => {
+  const splitLetters = (word, isHighlighted) => {
     let letters = [];
     word.split('').forEach((letter, i) => {
+      const opacity = isHighlighted ? 1 : 0.1; // Adjust the opacity values as desired
       letters.push(
-        <span key={letter + '_' + i} ref={(el) => refs.current.push(el)}>
+        <span
+          key={letter + '_' + i}
+          ref={(el) => refs.current.push(el)}
+          style={{ opacity }}
+        >
           {letter}
         </span>
       );
