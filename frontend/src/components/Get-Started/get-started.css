@@ -1,44 +1,69 @@
 .main {
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20vh; /* Adjust the value as desired for the distance from the top */
-    margin-bottom: 100vh;
-    color: rgb(255, 255, 255);
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20vh; /* Adjust the value as desired for the distance from the top */
+  margin-bottom: 100vh;
+  color: rgb(255, 255, 255);
 }
+.card {
+  .Button1 {
+display: block;
+    position: relative;
+    right: 45%;
+    top: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 28px;
+    border: 3px solid #fffecc;
+    cursor: pointer;
+    color: #fffecc;
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 1px 1px 6px 1px #fffecc;
+  }
 
-
+  .Button1:hover {
+    background-color: #fffecc;
+    color: #161616;
+    box-shadow: 1px 1px 6px 1px rgb(168, 160, 150);
+    transition: background-color 0.3s ease, color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+}
 .body {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-top: 10px; /* Adjust the value as desired for the distance from the top */
-    margin-bottom: 0;
-    margin-top: 95px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 10px; /* Adjust the value as desired for the distance from the top */
+  margin-bottom: 0;
+  margin-top: 95px;
 }
 
 .body p {
-    font-size: 3.5vw;
-    margin: 10px 0 0 0; /* Adjust the margin as desired */
-    margin-right: 1.5vw;
-  }
-  
+  font-size: 3.5vw;
+  margin: 10px 0 0 0; /* Adjust the margin as desired */
+  margin-right: 1.5vw;
+}
 
 .body span {
-    opacity: 0.42;
+  opacity: 0.42;
 }
 
 .body p.highlight {
-    color: rgb(255, 255, 0);
+  color: rgb(255, 255, 0);
 }
 
 .highlight {
-    color: yellow;
+  color: yellow;
 }
 
 .highlight1 {
-    color: yellow;
+  color: yellow;
 }
