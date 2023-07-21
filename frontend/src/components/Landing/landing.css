@@ -3,11 +3,29 @@
 body {
   background-color: #161616;
   overflow-y: scroll;
+  
 }
+
+/* body {
+
+  -ms-overflow-style: none;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+} 
+*/
 
 .text-main {
   margin-top: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  height: 50px;
 }
 
 .text {
@@ -75,6 +93,7 @@ body {
 
 .link-button {
   text-decoration: none;
+ height: 0px;
 }
 
 .link-button:hover {
@@ -143,17 +162,22 @@ body {
 }
 
 
-.collab{
+.collab1{
   height: 12em;
   width: 15em;
   
   border-radius: 25px;
-  opacity: 0.4;
+  opacity: 1;
   position: relative;
   left: 58%;
   bottom:28em;
-  animation: movingAnimation 12s ease-in infinite;
+  animation: movingAnimation 40s ease-in infinite;
   animation: fadeInAnimation2 6s ease-in forwards;
+}
+
+
+.collab1:hover{
+opacity: 1;
 }
 @keyframes fadeInAnimation2 {
   0% {
@@ -174,3 +198,5 @@ body {
     transform: translate(0, 0);
   }
 }
+
+
