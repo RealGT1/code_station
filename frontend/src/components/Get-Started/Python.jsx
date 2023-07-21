@@ -8,11 +8,13 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 
 const PythonCard=()=> {
   return (
+    <Link to="/pythoncode" className="link-button">
     <Card
       sx={{
         maxWidth: 345,
         backgroundColor: "#2c3539",
         borderRadius: "25px",
+        boxShadow: "1px 4px 10px 1px grey",
         fontFamily: "SF Pro Display, Arial, Helvetica, sans-serif",
       }}
     >
@@ -33,27 +35,25 @@ const PythonCard=()=> {
             Python
           </Typography>
           <Typography variant="body2" color="text.secondary" color="#d2e5f8">
-            Java is a versatile and robust language which is widely used across
-            the tech world.
+          Python is a versatile, robust, and popular language with an extensive library for diverse tech applications.
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      <Link to='/pythoncode' className='link-button'>
-        <Button
-          size="small"
-          color="primary"
-          sx={{
-            color: "black",
-            backgroundColor: "#fffecc",
-            fontFamily: "SF Pro Display, Arial, Helvetica, sans-serif",
-          }}
-        >
-          Let's Go
-        </Button>
-        </Link>
-      </CardActions>
+      <CardActions sx={{ justifyContent: "center" }}>
+          <Button
+            size="small"
+            color="primary"
+            sx={{
+              color: "black",
+              backgroundColor: "#fffecc",
+              fontFamily: "SF Pro Display, Arial, Helvetica, sans-serif",
+            }}
+          >
+            Let's Go
+          </Button>
+        </CardActions>
     </Card>
+    </Link>
   );
 }
 export default  PythonCard;

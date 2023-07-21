@@ -23,28 +23,27 @@ function App() {
   return (
     <div>
       <section>
-        <Router>
-          <Routes>
-            {!isUserLoggedIn ? (
-              <>
-                <Route exact path="/" element={<Landing />} />
-                <Route exact path="/start" element={<Getstarted />} />
-                <Route exact path="/signin" element={<Auth />} />
-              </>
-            ) : (
-              <>
-                <Route exact path="/" element={<Getstarted />} />
-                <Route exact path="/javacode" element={<Java1 />} />
-                <Route exact path="/pythoncode" element={<Python1 />} />
-                <Route exact path="/assemblycode" element={<Assembly1 />} />
-              </>
-            )}
-          </Routes>
-        </Router>
+        <Routes>
+          {!isUserLoggedIn ? (
+            <>
+              <Route path="/" element={<Landing />} />
+              <Route path="/start" element={<Getstarted />} />
+              <Route path="/signin" element={<Auth />} />
+            </>
+          ) : (
+            <>
+              <Route path="/" element={<Getstarted />} />
+              <Route path="/home" element={<Landing />} />
+              
+              <Route path="/javacode" element={<Java1 />} />
+              <Route path="/pythoncode" element={<Python1 />} />
+              <Route path="/assemblycode" element={<Assembly1 />} />
+            </>
+          )}
+        </Routes>
       </section>
     </div>
   );
 }
 
 export default App;
-
