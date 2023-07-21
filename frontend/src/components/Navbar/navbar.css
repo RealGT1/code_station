@@ -1,8 +1,8 @@
+.user-name{
+  color: rgb(255, 204, 0);
+}
 .title {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: left;
-  align-items: center;
   height: 12px;
   font-size: 1.8em;
   font-weight: 500;
@@ -11,11 +11,9 @@
   cursor: pointer;
   margin-left: 1em;
 }
+
 .t2 {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: left;
-  align-items: center;
   height: 12px;
   font-size: 1em;
   font-weight: 500;
@@ -24,43 +22,58 @@
   margin-left: 0em;
   cursor: pointer;
 }
+
 .Button1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 74%;
-    top: 60%;
-    
-    background-color: transparent;
-    border-radius: 28px;
-    border: 3px solid #fffecc ;
-    cursor: pointer;
-    color: #fffecc;
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 10px 20px;
-    text-decoration: none;
-    box-shadow: 1px 1px 6px 1px #fffecc ;
-    opacity: 0; /* Start with 0 opacity */
-    animation: fadeInbtn 0.5s ease-in 0.5s forwards;
-    
+
+margin-top: 10px;
+  background-color: transparent;
+  border-radius: 28px;
+  border: 3px solid #fffecc;
+  cursor: pointer;
+  color: #fffecc;
+  font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 1px 1px 6px 1px #fffecc;
+  opacity: 0;
+  /* Start with 0 opacity */
+  animation: fadeInbtn 0.5s ease-in 0.5s forwards;
+
 }
 
 .Button1:hover {
-    background-color:#fffecc ;
-    color: #161616;
-    box-shadow: 1px 1px 6px 1px rgb(168,160,150);
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffecc;
+  color: #161616;
+  box-shadow: 1px 1px 6px 1px rgb(168, 160, 150);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
-.icons{
-    display: flex;
-    justify-items: flex-end;
-    align-items: center;
-    position: relative;
-    left: 77%;
-    top: 60%;
-    font-size: 5em;
-    cursor: pointer;
+
+
+
+.nava {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navaa {
+  align-self: flex-start;
+
+}
+
+.navb {
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navicon{
+  margin-top: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fffb7e;
 }
