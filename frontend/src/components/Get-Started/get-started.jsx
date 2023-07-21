@@ -4,6 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLocation } from "react-router-dom";
 import "./get-started.css";
 
+import MultiActionAreaCard1 from "./Java";
+import AssemblyCard from "./Assembly";
+import PythonCard from "./Python";
+
 const phrase =
   "Experience coding like never before with CodeStation! Collaborate effortlessly, share code seamlessly, and make your college life a breeze.... Join us now and revolutionize your coding journey.. . CodeStation: Empowering students, simplifying coding.";
 
@@ -11,7 +15,6 @@ const Getstarted = () => {
   const refs = useRef([]);
   const containerRef = useRef(null);
   const location = useLocation();
-  const [showCard, setShowCard] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
@@ -30,8 +33,6 @@ const Getstarted = () => {
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top 50%",
-        onEnter: () => setShowCard(true),
-        onLeaveBack: () => setShowCard(false),
       },
     });
 
@@ -57,7 +58,7 @@ const Getstarted = () => {
         trigger: containerRef.current,
         scrub: true,
         start: "top 20%",
-        end: `+=${window.innerHeight / 1.5}`,
+        end: `+=${window.innerHeight / 1.87}`,
       },
       opacity: 1,
       ease: "none",
@@ -130,18 +131,29 @@ const Getstarted = () => {
   };
 
   return (
-    <main className='main'>
-      <div className='body' ref={containerRef}>
+    <div className="main">
+      <div className="body" ref={containerRef}>
         {splitSentences(phrase)}
       </div>
-
-      <div className="card">
-      {showCard && (
-       <button className="Button1">Show me how</button>
-      )}
+      <div className="cardholder">
+        <div className="javacard">
+          <MultiActionAreaCard1 />
+        </div>
+        <div className="pythoncard">
+          <PythonCard />
+        </div>
+        <div className="assemblycard">
+          <AssemblyCard />
+        </div>
+        <div className="signInBtn">
+          <button className="signIn">Sign In</button>
+          <div className="signInLabel">
+          For More Options,
+        </div>
+        </div>
+        
       </div>
-
-    </main>
+    </div>
   );
 };
 

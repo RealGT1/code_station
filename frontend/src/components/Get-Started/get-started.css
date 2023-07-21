@@ -1,49 +1,93 @@
 .main {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   display: flex;
-  height: 100vh;
+  height: 80vh;
   align-items: flex-start;
   justify-content: center;
   margin-top: 20vh; /* Adjust the value as desired for the distance from the top */
-  margin-bottom: 100vh;
+  margin-bottom: 85vh;
   color: rgb(255, 255, 255);
+  overflow: hidden;
+  margin-left: 15px;
 }
-.card {
-  .Button1 {
-display: block;
-    position: relative;
-    right: 45%;
-    top: 100%;
-    overflow: hidden;
-    background-color: transparent;
-    border-radius: 28px;
-    border: 3px solid #fffecc;
-    cursor: pointer;
-    color: #fffecc;
-    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 10px 20px;
-    text-decoration: none;
-    box-shadow: 1px 1px 6px 1px #fffecc;
-  }
 
-  .Button1:hover {
-    background-color: #fffecc;
-    color: #161616;
-    box-shadow: 1px 1px 6px 1px rgb(168, 160, 150);
-    transition: background-color 0.3s ease, color 0.3s ease,
-      box-shadow 0.3s ease;
-  }
-}
 .body {
-  width: 90%;
+  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-top: 10px; /* Adjust the value as desired for the distance from the top */
-  margin-bottom: 0;
-  margin-top: 95px;
+  /* Adjust the value as desired for the distance from the top */
+  margin-bottom: 20px;
+  margin-top: 115px;
+}
+
+.javacard {
+  position: absolute;
+  display: flex;
+  margin-top: 5em;
+  top: 95%;
+  right: 75%;
+}
+.pythoncard {
+  position: absolute;
+  display: flex;
+  margin-top: 5em;
+  top: 95%;
+  right: 39%;
+}
+.assemblycard {
+  position: absolute;
+  display: flex;
+  margin-top: 5em;
+  top: 95%;
+  right: 3%;
+}
+
+.signIn {
+  display: flex;
+
+  position: absolute;
+  right: 48%;
+  top: 160%;
+
+  background-color: transparent;
+  border-radius: 28px;
+  border: 3px solid #fffecc;
+  cursor: pointer;
+  color: #fffecc;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 1px 1px 6px 1px #fffecc;
+}
+
+.signIn:hover {
+  background-color: #fffecc;
+  color: #161616;
+  box-shadow: 1px 1px 6px 1px rgb(168, 160, 150);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.signInLabel {
+  display: flex;
+
+  position: absolute;
+  right: 54%;
+  top: 160%;
+  color: #fffecc;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.link-button {
+  text-decoration: none;
+}
+.link-button:hover {
+  text-decoration: none;
 }
 
 .body p {
