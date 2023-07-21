@@ -55,7 +55,7 @@ const Landing = () => {
           </Link>
         ) : (
 
-          <Link to='/start' className='link-button'>
+          <Link to='/' className='link-button'>
             <button className='myButton'>Get Started</button>
           </Link>
 
