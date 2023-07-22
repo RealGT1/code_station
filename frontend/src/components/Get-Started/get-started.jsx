@@ -130,6 +130,12 @@ const Getstarted = () => {
     return letters;
   };
 
+
+  const handleBackClick = () => {
+    // Redirect to the other page
+    window.location.href = '/home';
+  };
+
   return (
     <div className="main">
       <div className="body" ref={containerRef}>
@@ -146,12 +152,9 @@ const Getstarted = () => {
           <AssemblyCard />
         </div>
         <div className="signInBtn">
-          <button className="signIn">Sign In</button>
-          <div className="signInLabel">
-          For More Options,
+          <button className="signIn" onClick={handleBackClick}>Back</button>
         </div>
-        </div>
-        
+
       </div>
     </div>
   );
