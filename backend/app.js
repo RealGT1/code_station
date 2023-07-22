@@ -1,6 +1,9 @@
 //mongodb+srv://Logi8591:<password>@logi.fanmw0g.mongodb.net/?retryWrites=true&w=majority 
 //lVSasYaI1EIhQmOL
 
+//codestation
+
+
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv"
